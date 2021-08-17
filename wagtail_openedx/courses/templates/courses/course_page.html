@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <h1>{{ page.title }} ({{ page.code }})</h1>
+
+    <h4>{% translate "Categories" %}:</h4> {% for category in page.categories.all %}{{ category.name }}{% endfor %}
+
+    {{ page.description|richtext }}
+
+    <h2>{% translate "Instructors" %}</h2>
+    {% for instructor in page.instructors.all %}
+        <h3>{{ instructor.name }}</h3>
+        {{ instructor.bio|richtext }}
+    {% endfor %}
+{% endblock %}
