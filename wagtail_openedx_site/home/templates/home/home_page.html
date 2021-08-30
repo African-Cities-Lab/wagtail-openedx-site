@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load i18n wagtailcore_tags %}
+
+{% block content %}
+
+    <h1>Wagtail openedX</h1>
+
+    <h2>{% translate "Courses" %}</h2>
+
+    {% for course in courses.all %}
+        <p><a href="{% pageurl course %}">{{ course.title }}</a></p>
+    {% empty %}
+        <p>{% translate "There are no courses to display." %}</p>
+    {% endfor %}
+
+    <h4><a href="{% pageurl course_index_page %}">{% translate "View all courses" %}</a></h4>
+
+    <h2>{% translate "Partners" %}</h2>
+
+    {% for partner in partners.all %}
+        <p><a href="{% pageurl partner %}">{{ partner.title }}</a></p>
+    {% empty %}
+        <p>{% translate "There are no partners to display." %}</p>
+    {% endfor %}
+
+{% endblock %}

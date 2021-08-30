@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=wagtail_openedx_site
+POSTGRES_USER=ybCzAAWhyvidaauHZpRiPflafQxfwndR
+POSTGRES_PASSWORD=rEztZCfhK9Y5FatZFQgQIMwNO9Q2lVM2SrkBUGzfqG5MYxwtTenQMLkRbkjkMLrT

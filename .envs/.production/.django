@@ -1,0 +1,32 @@
+# General
+# ------------------------------------------------------------------------------
+# DJANGO_READ_DOT_ENV_FILE=True
+DJANGO_SETTINGS_MODULE=config.settings.production
+DJANGO_SECRET_KEY=
+DJANGO_ADMIN_URL=
+DJANGO_ALLOWED_HOSTS=.wagtail-openedx.africancitieslab.org
+
+# Wagtail
+# ------------------------------------------------------------------------------
+WAGTAIL_ADMIN_URL=
+
+# Security
+# ------------------------------------------------------------------------------
+# TIP: better off using DNS, however, redirect is OK too
+DJANGO_SECURE_SSL_REDIRECT=False
+
+# AWS
+# ------------------------------------------------------------------------------
+DJANGO_AWS_ACCESS_KEY_ID=
+DJANGO_AWS_SECRET_ACCESS_KEY=
+DJANGO_AWS_STORAGE_BUCKET_NAME=wagtail-openedx-site
+DJANGO_AWS_S3_REGION_NAME=fra1
+DJANGO_AWS_S3_ENDPOINT_URL=https://fra1.digitaloceanspaces.com
+
+# Gunicorn
+# ------------------------------------------------------------------------------
+WEB_CONCURRENCY=4
+
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
